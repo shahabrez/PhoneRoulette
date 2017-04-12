@@ -1,0 +1,8 @@
+<!-- views/agent_call.erb -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <%= erb :_welcome, :layout => false %>
+  <Dial hangupOnStar="true" action="roulette.xml">
+    <Queue url="about_to_connect.xml">roulette</Queue>
+  </Dial>
+</Response>
