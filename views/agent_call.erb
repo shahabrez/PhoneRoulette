@@ -3,7 +3,7 @@
   <%= erb :_welcome, :layout => false %>
   <Say voice="woman">Press Star for the Next Caller</Say>
   <Pause length="1"/>
-  <Dial hangupOnStar="true" action="about_to_connect.xml">
+  <Dial hangupOnStar="true" action="roulette.xml">
     <Queue url="about_to_connect.xml">roulette</Queue>
   </Dial>
 </Response>
